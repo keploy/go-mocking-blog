@@ -5,6 +5,7 @@
 # Keploy
 [Keploy](https://keploy.io) is a no-code testing platform that generates tests from API calls. 
 
+This repo contains sample code refered in the keploy golang mock generation blog. 
 
 ## Community support
 We'd love to collaborate with you to make Keploy great. To get started:

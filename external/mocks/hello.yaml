@@ -1,0 +1,63 @@
+version: api.keploy.io/v1beta2
+kind: Http
+name: hello
+spec:
+    metadata:
+        name: Http
+        operation: GET
+        type: HTTP_CLIENT
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: http://127.0.0.1:62105/?id=
+        header: {}
+        body: ""
+        body_type: utf-8
+    resp:
+        status_code: 400
+        header:
+            Content-Length: "3"
+            Content-Type: application/json
+            Date: Thu, 15 Jun 2023 10:05:20 GMT
+        body: |
+            {}
+        body_type: utf-8
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+    objects:
+        - type: error
+          data: H4sIAAAAAAAA/wEAAP//AAAAAAAAAAA=
+---
+version: api.keploy.io/v1beta2
+kind: Http
+name: hello
+spec:
+    metadata:
+        name: Http
+        operation: GET
+        type: HTTP_CLIENT
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: http://127.0.0.1:62105/?id=mock
+        header: {}
+        body: ""
+        body_type: utf-8
+    resp:
+        status_code: 200
+        header:
+            Content-Length: "28"
+            Content-Type: application/json
+            Date: Thu, 15 Jun 2023 10:05:20 GMT
+        body: |
+            {"id":"mock","name":"mock"}
+        body_type: utf-8
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+    objects:
+        - type: error
+          data: H4sIAAAAAAAA/wEAAP//AAAAAAAAAAA=
